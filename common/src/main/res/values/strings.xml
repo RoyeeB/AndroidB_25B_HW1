@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="picture">picture</string>
+    <string name="picture2">picture2</string>
+    <string name="option1">option1</string>
+    <string name="option2">option2</string>
+    <string name="app_name_welcome"> app_name_welcome</string>
+
+</resources>

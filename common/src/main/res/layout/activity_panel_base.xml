@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPanelBase"
+    android:padding="16dp"
+    android:background="@color/primary">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/welcome_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/app_LBL_name"
+        android:layout_marginTop="20dp"
+        android:text="Welcome"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/app_LBL_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="36sp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_IMG"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/welcome_LBL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@string/picture"
+         />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_IMG"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/add_BTN"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_plus"
+            android:background="@null"
+            android:scaleType="centerInside"
+             />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/counter_LBL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="0"
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/reduce_BTN"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_minus"
+            android:background="@null"
+            android:scaleType="centerInside"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/save_BTN"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/report_BTN"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_report"
+            android:background="@null"
+            android:scaleType="centerInside"
+             />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/avg_BTN"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_cal"
+            android:background="@null"
+            android:scaleType="centerInside"
+             />
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/week_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="week"
+        android:visibility="invisible" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/month_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/week_LBL"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="month"
+        android:visibility="invisible" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Save"
+        android:backgroundTint="@color/second"
+        android:textSize="15dp"
+        />
+
+
+
+</RelativeLayout>

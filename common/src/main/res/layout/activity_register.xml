@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/app_LBL_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="36sp"
+        android:text="@string/app_name_welcome"
+        android:textColor="@color/black"/>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/first_IMG"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/app_LBL_welcome"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@string/picture2"
+
+        />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_below="@+id/first_IMG"
+    >
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fullname_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Full Name"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/fullname_EDT"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/fullname_LBL"
+        android:background="@color/second"
+        android:layout_centerHorizontal="true"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/option1_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/fullname_EDT"
+        android:text="@string/option1"
+        android:layout_centerHorizontal="true"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/option1_EDT"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:background="@color/second"
+        android:layout_below="@+id/option1_LBL"
+        android:layout_centerHorizontal="true"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/option2_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/option1_EDT"
+        android:text="@string/option2"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/option2_EDT"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:background="@color/second"
+        android:layout_below="@+id/option2_LBL"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option2_EDT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/second"
+        android:textSize="15dp"
+        android:text="Register"
+
+        />
+</RelativeLayout>
+
+
+</RelativeLayout>

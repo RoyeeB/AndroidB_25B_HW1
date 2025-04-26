@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Stop Smoke</string>
+    <string name="picture" tools:ignore="ReferenceType">@drawable/ic_smoke</string>
+    <string name="picture2" tools:ignore="ReferenceType">@drawable/ic_garbage</string>
+    <string name="option1">How much do you smoke today?</string>
+    <string name="option2">What is your daily smoking goal?</string>
+    <string name="app_name_welcome">Lets Stop Smoke!</string>
+</resources>

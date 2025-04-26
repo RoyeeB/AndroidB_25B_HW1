@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Drink Water</string>
+    <string name="picture" tools:ignore="ReferenceType">@drawable/ic_waterglass</string>
+    <string name="picture2" tools:ignore="ReferenceType">@drawable/ic_drink</string>
+    <string name="option1">Weight</string>
+    <string name="option2">Average number of steps per day</string>
+    <string name="app_name_welcome">Start to drink water</string>
+</resources>
